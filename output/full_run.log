@@ -1,0 +1,123 @@
+START Mon Jun 29 02:24:54 IST 2026
+/Users/mohdshamshulqamar/Library/Python/3.12/lib/python/site-packages/numpy/_core/fromnumeric.py:3860: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/Users/mohdshamshulqamar/Library/Python/3.12/lib/python/site-packages/numpy/_core/_methods.py:144: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+
+=== Aesthetic-engine benchmark (mode=real, gender=female) ===
+
+Streaming 100 image(s) from URLs (no local copies)...
+
+image             Gemini fully   Gemini+Grok    Gemini+OSS   best
+-----------------------------------------------------------------
+enhanced_195139         0.5904        0.7184        0.7504   Gemini + OpenSource
+enhanced_6209           0.5428        0.7908        0.7428   Gemini + Grok
+enhanced_22223          0.5268        0.6788        0.6628   Gemini + Grok
+enhanced_34921          0.3806        0.4366        0.6206   Gemini + OpenSource
+enhanced_56376          0.4572        0.4172        0.6412   Gemini + OpenSource
+enhanced_57120          0.3948        0.3068        0.5308   Gemini + OpenSource
+enhanced_63079          0.3360        0.4160        0.5200   Gemini + OpenSource
+enhanced_112157         0.5516        0.7276        0.7356   Gemini + OpenSource
+enhanced_71372          0.4028        0.4988        0.6428   Gemini + OpenSource
+enhanced_82428          0.2720        0.3040        0.4880   Gemini + OpenSource
+enhanced_84385          0.5568        0.6768        0.7408   Gemini + OpenSource
+enhanced_75481          0.5096        0.5016        0.6456   Gemini + OpenSource
+enhanced_158653         0.4694        0.4614        0.6534   Gemini + OpenSource
+enhanced_139469         0.5776        0.6496        0.7616   Gemini + OpenSource
+enhanced_140029         0.5830        0.7110        0.7430   Gemini + OpenSource
+enhanced_140170         0.5896        0.7976        0.7736   Gemini + Grok
+enhanced_140204         0.4676        0.3876        0.6516   Gemini + OpenSource
+enhanced_140220         0.5960        0.6920        0.7560   Gemini + OpenSource
+enhanced_140232         0.5278        0.4958        no-key   Gemini fully
+enhanced_140391         0.4688        0.5088        0.6528   Gemini + OpenSource
+enhanced_140691         0.5266        0.6866        no-key   Gemini + Grok
+enhanced_3494090        0.3452        0.3612        no-key   Gemini + Grok
+enhanced_139286         0.3040        0.1760        0.2000   Gemini fully
+enhanced_3494316        0.4864        0.4624        no-key   Gemini fully
+enhanced_140858         0.5350        0.7190        no-key   Gemini + Grok
+enhanced_141045         0.5954        0.7634        0.7554   Gemini + Grok
+enhanced_3494418        0.5584        0.6064        no-key   Gemini + Grok
+enhanced_141034         0.5308        0.5228        no-key   Gemini fully
+enhanced_141204         0.6922        0.8682        no-key   Gemini + Grok
+enhanced_141473         0.5718        0.7638        0.7558   Gemini + Grok
+enhanced_145509         0.3322        0.3002        no-key   Gemini fully
+enhanced_145593         0.6556        0.8236        no-key   Gemini + Grok
+enhanced_145604         0.5266        0.7666        no-key   Gemini + Grok
+enhanced_145675         0.5900        0.6620        no-key   Gemini + Grok
+enhanced_145706         0.5824        0.8304        no-key   Gemini + Grok
+enhanced_145844         0.5250        0.7330        no-key   Gemini + Grok
+enhanced_145875         0.6168        0.8168        no-key   Gemini + Grok
+enhanced_146054         0.3804        0.4284        no-key   Gemini + Grok
+enhanced_146217         0.5952        0.7232        no-key   Gemini + Grok
+enhanced_146286         0.6484        0.8164        no-key   Gemini + Grok
+enhanced_146347         0.4626        0.4866        no-key   Gemini + Grok
+enhanced_146505         0.4982        0.6102        no-key   Gemini + Grok
+enhanced_146506         0.5250        0.6450        no-key   Gemini + Grok
+enhanced_146643         0.5090        0.6930        no-key   Gemini + Grok
+enhanced_146645         0.6358        0.7078        no-key   Gemini + Grok
+enhanced_146733         0.5424        0.7344        no-key   Gemini + Grok
+enhanced_146823         0.5526        0.6726        no-key   Gemini + Grok
+enhanced_144587         0.5142        0.5062        no-key   Gemini fully
+enhanced_144910         0.5452        0.5932        no-key   Gemini + Grok
+enhanced_145229         0.4660        0.5700        no-key   Gemini + Grok
+enhanced_3502017        0.4740        0.4420        no-key   Gemini fully
+enhanced_144414         0.6572        0.8572        no-key   Gemini + Grok
+enhanced_201035         0.6118        0.8118        no-key   Gemini + Grok
+enhanced_3481168        0.5596        0.7516        no-key   Gemini + Grok
+enhanced_93263          0.2800        0.1440        no-key   Gemini fully
+enhanced_94645          0.4292        0.5012        no-key   Gemini + Grok
+enhanced_95503          0.3782        0.4742        no-key   Gemini + Grok
+enhanced_3481853        0.5192        0.7032        no-key   Gemini + Grok
+enhanced_98419          0.6424        0.8104        no-key   Gemini + Grok
+enhanced_99904          0.6542        0.8222        no-key   Gemini + Grok
+enhanced_99438          0.4772        0.5812        no-key   Gemini + Grok
+enhanced_179003         0.3256        0.2856        no-key   Gemini fully
+enhanced_188554         0.5844        0.6804        no-key   Gemini + Grok
+enhanced_185154         0.4932        0.5092        no-key   Gemini + Grok
+enhanced_185498         0.5834        0.7594        no-key   Gemini + Grok
+enhanced_190704         0.4400        0.3360        no-key   Gemini fully
+enhanced_3501578        0.4816        0.6336        no-key   Gemini + Grok
+enhanced_99239          0.4774        0.7094        no-key   Gemini + Grok
+enhanced_101055         0.5860        0.6100        no-key   Gemini + Grok
+enhanced_100991         0.4204        0.4204        no-key   Gemini fully
+enhanced_3484320        0.5602        0.7362        no-key   Gemini + Grok
+enhanced_103382         0.6864        0.8384        no-key   Gemini + Grok
+enhanced_109580         0.3360        0.3760        no-key   Gemini + Grok
+enhanced_3487150        0.4144        0.3744        no-key   Gemini fully
+enhanced_124917         0.5504        0.7424        no-key   Gemini + Grok
+enhanced_3488167        0.6344        0.8344        no-key   Gemini + Grok
+enhanced_124476         0.3796        0.2756        no-key   Gemini fully
+enhanced_127515         0.3878        0.4438        no-key   Gemini + Grok
+enhanced_125853         0.5102        0.5022        no-key   Gemini fully
+enhanced_3491730        0.6980        0.8580        no-key   Gemini + Grok
+enhanced_3492600        0.4192        0.4512        no-key   Gemini + Grok
+enhanced_133756         0.4400        0.4160        no-key   Gemini fully
+enhanced_3494210        0.4960        0.7440        no-key   Gemini + Grok
+enhanced_3494999        0.4653        0.6253        no-key   Gemini + Grok
+enhanced_147578         0.3378        0.2818        no-key   Gemini fully
+enhanced_3495195        0.5098        0.6938        no-key   Gemini + Grok
+enhanced_3495252        0.5928        0.5288        no-key   Gemini fully
+enhanced_147748         0.7000        0.8600        no-key   Gemini + Grok
+enhanced_148146         0.1300        0.0000        no-key   Gemini fully
+enhanced_149049         0.4692        0.4692        no-key   Gemini fully
+enhanced_149442         0.4376        0.5976        no-key   Gemini + Grok
+enhanced_153055         0.4672        0.4352        no-key   Gemini fully
+enhanced_152250         0.4572        0.5052        no-key   Gemini + Grok
+enhanced_3496010        0.3360        0.5120        no-key   Gemini + Grok
+enhanced_156536         0.5668        0.6948        no-key   Gemini + Grok
+enhanced_158826         0.4952        0.6472        no-key   Gemini + Grok
+enhanced_160566         0.6008        0.7928        no-key   Gemini + Grok
+enhanced_3496313        0.4852        0.6132        no-key   Gemini + Grok
+enhanced_161509         0.3946        0.4506        no-key   Gemini + Grok
+enhanced_167192         0.4724        0.5284        no-key   Gemini + Grok
+
+Ground-truth agreement (labels are good/bad):
+  AUC = P(good photo scores above bad) — 0.5 coin-flip, 1.0 perfect.
+  Gemini fully           AUC=0.5730  separation=+0.0229  (n=100)
+  Gemini + Grok          AUC=0.5338  separation=+0.0311  (n=100)
+  Gemini + OpenSource    AUC=n/a  separation=n/a  (n=22)
+  --> BEST at separating good from bad: Gemini fully
+
+Summary sheet:  /Users/mohdshamshulqamar/Downloads/IMAGE_RATING_PROJECT/image_rating_system/output/comparison.csv
+Detailed sheet: /Users/mohdshamshulqamar/Downloads/IMAGE_RATING_PROJECT/image_rating_system/output/comparison_detailed.csv  (every parameter, reasoning, winner)
+END Mon Jun 29 02:56:50 IST 2026

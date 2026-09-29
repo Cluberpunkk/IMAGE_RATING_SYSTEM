@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "lokal-lens": {
+      "command": "/Users/mohdshamshulqamar/Downloads/lokal-lens/venv/bin/python",
+      "args": ["-m", "lokal_lens.server"],
+      "env": {
+        "PYTHONPATH": "/Users/mohdshamshulqamar/Downloads/lokal-lens",
+        "SEMANTIC_LAYER_PATH": "/Users/mohdshamshulqamar/Downloads/lokal-lens/config/semantic_layer.yaml",
+        "QUERY_IDS_PATH": "/Users/mohdshamshulqamar/Downloads/lokal-lens/config/query_ids.yaml",
+        "AUDIT_LOG_PATH": "/Users/mohdshamshulqamar/Downloads/lokal-lens/audit_log.sqlite",
+        "BUSINESS_KNOWLEDGE_PATH": "/Users/mohdshamshulqamar/Downloads/lokal-lens/config/business_knowledge.yaml"
+      }
+    }
+  }
+}

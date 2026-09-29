@@ -1,0 +1,58 @@
+START Mon Jun 29 14:42:14 IST 2026
+  ...scored 10 photos
+  ...scored 20 photos
+  ...scored 30 photos
+  ...scored 40 photos
+
+=== Aesthetic-engine benchmark (mode=real, gender=female) ===
+
+Streaming 40 image(s) from URLs (no local copies)...
+
+image             Gemini fully   Gemini+Grok    Gemini+OSS   best
+-----------------------------------------------------------------
+enhanced_5172392        0.6322        0.7842        0.7522   Gemini + Grok
+enhanced_5199897        0.7050        0.7770        0.7530   Gemini + Grok
+enhanced_4706207        0.5058        0.4818        0.7138   Gemini + OpenSource
+enhanced_4658784        0.7148        0.8668        0.8988   Gemini + OpenSource
+enhanced_4524525        0.7218        0.8258        0.8018   Gemini + Grok
+enhanced_4575736        0.6184        0.5304        0.6504   Gemini + OpenSource
+enhanced_4978573        0.6282        0.7242        0.7562   Gemini + OpenSource
+enhanced_3636488        0.7006        0.8526        0.8846   Gemini + OpenSource
+enhanced_4938592        0.7346        0.8466        0.8626   Gemini + OpenSource
+enhanced_4355546        0.6378        0.8058        0.7818   Gemini + Grok
+enhanced_5376506        0.7140        0.8020        0.7940   Gemini + Grok
+enhanced_4633611        0.6826        0.7466        0.7306   Gemini + Grok
+enhanced_3196816        0.7050        0.7850        0.8410   Gemini + OpenSource
+enhanced_5228823        0.6350        0.7150        0.7630   Gemini + OpenSource
+enhanced_5222060        0.6936        0.7976        0.7016   Gemini + Grok
+enhanced_4595652        0.6208        0.6528        0.7008   Gemini + OpenSource
+enhanced_4519258        0.6692        0.8212        0.7972   Gemini + Grok
+enhanced_5131833        0.6606        0.8126        0.7886   Gemini + Grok
+enhanced_5075885        0.6470        0.8070        0.7910   Gemini + Grok
+enhanced_4844393        0.6786        0.7506        0.7826   Gemini + OpenSource
+enhanced_4368011        0.7514        0.8394        0.8074   Gemini + Grok
+enhanced_5128303        0.7268        0.7988        0.7668   Gemini + Grok
+enhanced_4966707        0.6250        0.6970        0.7850   Gemini + OpenSource
+enhanced_4622670        0.4888        0.6328        0.5768   Gemini + Grok
+enhanced_4625960        0.5988        0.7668        0.7348   Gemini + Grok
+enhanced_5284557        0.7536        0.8656        0.8256   Gemini + Grok
+enhanced_5089055        no-key        0.6926        0.7806   Gemini + OpenSource
+enhanced_5377658        0.6632        0.7752        0.7912   Gemini + OpenSource
+enhanced_5370670        0.5800        0.7080        0.7080   Gemini + Grok
+enhanced_5202038        0.6956        0.7836        0.7996   Gemini + OpenSource
+enhanced_5161168        0.5932        0.6892        0.6172   Gemini + Grok
+enhanced_5471633        0.7460        0.8180        0.7940   Gemini + Grok
+enhanced_4213877        0.7516        0.8316        0.8716   Gemini + OpenSource
+enhanced_5097736        0.6592        0.8112        0.7872   Gemini + Grok
+enhanced_965068         0.7114        0.8554        0.8794   Gemini + OpenSource
+enhanced_965055         0.6748        0.8508        0.7548   Gemini + Grok
+enhanced_3932063        0.6988        0.7868        0.8668   Gemini + OpenSource
+enhanced_3157892        0.7106        0.7746        0.7586   Gemini + Grok
+enhanced_4499766        0.7148        0.8188        0.7948   Gemini + Grok
+enhanced_4905926        0.6570        0.7930        0.7690   Gemini + Grok
+
+(no --truth given: 'best' = highest score, NOT necessarily best. Pass --truth labels.csv to rank engines against human judgement.)
+
+Summary sheet:  output/comparison_3engine.csv
+Detailed sheet: output/comparison_3engine_detailed.csv  (every parameter, reasoning, winner)
+END Mon Jun 29 16:55:54 IST 2026

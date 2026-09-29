@@ -1,0 +1,12 @@
+*.pyc
+.env
+__pycache__/
+creds.json
+output/*.json
+output/*.jsonl
+real_images/
+run_benchmark.sh
+sample_images/
+label_photos/
+.DS_Store
+.claude/

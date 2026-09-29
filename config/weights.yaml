@@ -1,0 +1,120 @@
+# weights.yaml
+# ============
+# Versioned scoring configuration. Editing this file + bumping `weight_version`
+# triggers a re-score of affected images (the version is stamped on every record).
+# No code deploy required — this is the "weight management" requirement, done right.
+#
+# Fixes baked in vs the original PRD:
+#  - 'Attractiveness' removed from qualitative weights (it had no model source).
+#    It is now the top-level `aesthetic` signal in the final blend.
+#  - Qualitative weights are renormalised over the 9 attributes the VLM emits.
+#  - Blend is "aesthetic vs qualitative" (both produced by ONE VLM now),
+#    not "Grok vs Gemini".
+#  - Blocking-flag set is explicit and configurable.
+
+weight_version: "v3.0-2026-06"
+
+# ---------------------------------------------------------------------------
+# Stage-0 open-source quality gate thresholds (reject before any paid call)
+# ---------------------------------------------------------------------------
+prefilter:
+  min_megapixels: 0.08          # ~ 320x250; below this a face can't be judged
+  min_blur_score: 40.0          # Laplacian variance; below = too blurry
+  min_brightness: 25.0          # mean luma; below = too dark to evaluate
+  max_brightness: 240.0         # above = blown out
+  min_aspect_ratio: 0.3
+  max_aspect_ratio: 3.5
+
+  # Pluggable open-source ML gate (src/detectors.py). Rejects NSFW / no-face
+  # images BEFORE the paid VLM call. Default 'none' defers to the VLM so the
+  # demo runs with zero heavy deps; flip to 'transformers' in production.
+  #   type: none | transformers | composite
+  # NOTE: we deliberately avoid skin-tone heuristics here (tone-biased) and use
+  # a LEARNED classifier instead — see detectors.py header.
+  deep_detector:
+    type: none
+    nsfw_threshold: 0.7
+    # Example production config (needs `pip install transformers torch`):
+    #   type: composite
+    #   composite:
+    #     - { type: transformers, model: "Falconsai/nsfw_image_detection", nsfw_threshold: 0.7 }
+
+# ---------------------------------------------------------------------------
+# Qualitative attribute weights (sum is normalised at load time)
+# Only the 9 attributes the VLM actually returns.
+# ---------------------------------------------------------------------------
+qualitative_weights:
+  expression: 0.18
+  face_orientation_visibility: 0.10
+  eye_contact: 0.12
+  grooming_neatness: 0.12
+  centering: 0.08
+  pose_camera_angle: 0.08
+  background_foreground_separation: 0.08
+  lighting_on_face: 0.14
+  attire: 0.10
+
+# ---------------------------------------------------------------------------
+# Final blend: aesthetic (photogenic) vs qualitative (presentation), per gender.
+# NOTE: the original PRD used 0.80 aesthetic for the female feed. That is kept
+# here as a *configurable* default, but see README "Fairness" — 0.55-0.65 is the
+# recommended starting point. Tune via this file, measure via A/B, never deploy.
+# ---------------------------------------------------------------------------
+blend_weights:
+  female:
+    aesthetic: 0.80
+    qualitative: 0.20
+  male:
+    aesthetic: 0.50
+    qualitative: 0.50
+
+# ---------------------------------------------------------------------------
+# Flags that force the image out of feed ranking (status = BLOCKED, score = 0).
+# Everything else is informational or applied as a soft penalty.
+# ---------------------------------------------------------------------------
+blocking_flags:
+  - nsfw
+  - inappropriate
+  - group_image
+  - celebrity_stock
+  - rephotograph_or_screenshot
+  - gender_mismatch
+
+# Soft-penalty flags: subtract from final score instead of hard-blocking.
+soft_penalties:
+  advertisements_or_text: 0.15
+
+# ---------------------------------------------------------------------------
+# Fallback policy (fixes PRD bug #5: 0.5 was ABOVE median -> failed images
+# out-ranked real mediocre photos). Failed images get a LOW neutral score and
+# are flagged for retry; the ranking layer should prefer last-known-good.
+# ---------------------------------------------------------------------------
+fallback:
+  failed_score: 0.25
+  prefiltered_score: 0.0
+  retry: true
+
+  # Open-source VLM fallback (src/vlm_opensource.py). Gemini scores ALL params;
+  # for any parameter Gemini cannot produce a valid value, this model fills ONLY
+  # that parameter (per-parameter fusion, src/fusion.py). NOT Grok — the best
+  # open vision model. OpenAI-compatible, so OpenRouter / Groq / vLLM all work.
+  vlm:
+    enabled: false                              # flip true in prod + set env
+    model: "Qwen/Qwen2.5-VL-72B-Instruct"
+    base_url_env: OSS_VLM_BASE_URL              # e.g. https://openrouter.ai/api/v1
+    api_key_env: OSS_VLM_API_KEY
+
+# ---------------------------------------------------------------------------
+# Resilience for the paid VLM calls (src/resilience.py). Bounded retry on
+# TRANSIENT errors + a circuit breaker so one Gemini incident fast-fails to the
+# safe fallback instead of paying full timeout latency on every image.
+# ---------------------------------------------------------------------------
+resilience:
+  retry:
+    max_attempts: 3          # total tries per call (1 original + 2 retries)
+    base_delay: 0.5          # seconds; doubles each retry (0.5, 1.0, ...)
+    max_delay: 8.0           # cap on a single backoff sleep
+    jitter: 0.25             # ±25% randomisation to de-sync retries
+  circuit_breaker:
+    fail_max: 5              # consecutive failures before the breaker OPENs
+    reset_timeout: 30.0      # seconds OPEN before a single HALF_OPEN probe

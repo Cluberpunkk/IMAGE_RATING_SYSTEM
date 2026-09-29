@@ -1,0 +1,9 @@
+START
+n=30 (15 approved + 15 rejected)
+
+AVG:  Gemini-BEAST=0.635   Grok=0.632
+AUC (separates approved from rejected):
+  Gemini-BEAST = 0.484
+  Gemini+Grok  = 0.453
+  spread: Gemini-BEAST std=0.159  Grok std=0.178  (higher=more discriminative)
+END

@@ -1,0 +1,54 @@
+START Mon Jun 29 23:36:33 IST 2026
+  ...scored 10 photos
+  ...scored 20 photos
+  ...scored 30 photos
+
+=== Aesthetic-engine benchmark (mode=real, gender=female) ===
+
+(balanced pilot: 30 images, <= 15/class)
+
+Streaming 30 image(s) from URLs (no local copies)...
+
+image             Gemini fully   Gemini+Grok    Gemini+OSS   best
+-----------------------------------------------------------------
+enhanced_195139         0.7430        0.7910        no-key   Gemini + Grok
+enhanced_6209           0.6438        0.7638        no-key   Gemini + Grok
+enhanced_22223          0.5364        0.6884        no-key   Gemini + Grok
+enhanced_34921          0.1602        0.3362        no-key   Gemini + Grok
+enhanced_56376          0.4640        0.5120        no-key   Gemini + Grok
+enhanced_57120          0.4220        0.3900        no-key   Gemini fully
+enhanced_63079          0.3840        0.3840        no-key   Gemini fully
+enhanced_112157         0.6450        0.8130        no-key   Gemini + Grok
+enhanced_71372          0.4910        0.6430        no-key   Gemini + Grok
+enhanced_82428          0.3804        0.5644        no-key   Gemini + Grok
+enhanced_84385          0.6610        0.7090        no-key   Gemini + Grok
+enhanced_75481          0.5132        0.7132        no-key   Gemini + Grok
+enhanced_158653         0.6336        0.6256        no-key   Gemini fully
+enhanced_139469         0.7258        0.7178        no-key   Gemini fully
+enhanced_140029         0.6728        0.8008        no-key   Gemini + Grok
+enhanced_3502017        0.4932        0.6692        no-key   Gemini + Grok
+enhanced_144414         0.8322        0.8242        no-key   Gemini fully
+enhanced_201035         0.7482        0.8122        no-key   Gemini + Grok
+enhanced_3481168        0.6068        0.7908        no-key   Gemini + Grok
+enhanced_93263          0.2000        0.2560        no-key   Gemini + Grok
+enhanced_94645          0.4656        0.5056        no-key   Gemini + Grok
+enhanced_95503          0.2356        0.3316        no-key   Gemini + Grok
+enhanced_3481853        0.5834        0.7274        no-key   Gemini + Grok
+enhanced_98419          0.7488        0.8048        no-key   Gemini + Grok
+enhanced_99904          0.7542        0.8262        no-key   Gemini + Grok
+enhanced_99438          0.5222        0.5542        no-key   Gemini + Grok
+enhanced_179003         0.2652        0.3052        no-key   Gemini + Grok
+enhanced_188554         0.7002        0.7882        no-key   Gemini + Grok
+enhanced_185154         0.5182        0.5102        no-key   Gemini fully
+enhanced_185498         0.6112        0.7952        no-key   Gemini + Grok
+
+Ground-truth agreement (labels are good/bad):
+  AUC = P(good photo scores above bad) — 0.5 coin-flip, 1.0 perfect.
+  Gemini fully           AUC=0.4444  separation=-0.0139  (n=30)
+  Gemini + Grok          AUC=0.4533  separation=-0.0033  (n=30)
+  Gemini + OpenSource    AUC=n/a  separation=n/a  (n=0)
+  --> BEST at separating good from bad: Gemini + Grok
+
+Summary sheet:  output/comparison_approved_rejected.csv
+Detailed sheet: output/comparison_approved_rejected_detailed.csv  (every parameter, reasoning, winner)
+END Mon Jun 29 23:43:52 IST 2026

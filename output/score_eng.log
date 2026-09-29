@@ -1,0 +1,231 @@
+START Mon Jun 29 09:44:43 IST 2026
+  ...scored 10 photos
+  ...scored 20 photos
+  ...scored 30 photos
+  ...scored 40 photos
+  ...scored 50 photos
+  ...scored 60 photos
+  ...scored 70 photos
+  ...scored 80 photos
+  ...scored 90 photos
+  ...scored 100 photos
+  ...scored 110 photos
+  ...scored 120 photos
+  ...scored 130 photos
+  ...scored 140 photos
+  ...scored 150 photos
+  ...scored 160 photos
+  ...scored 170 photos
+
+=== Aesthetic-engine benchmark (mode=real, gender=female) ===
+
+Streaming 200 image(s) from URLs (no local copies)...
+
+  skip enhanced_4635969_NRVv5Wy (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_373234 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4562796 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4955316 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_5079921 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4481265 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_2714393 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4759430_7iaDodN (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4474990 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_276756 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_2698507 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_5357157 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_5335882 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4557885 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_5286771 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4539248 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4391860 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4850264 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_3158159 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_5261633 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_4458886 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+  skip enhanced_2404367 (URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>)
+image             Gemini fully   Gemini+Grok    Gemini+OSS   best
+-----------------------------------------------------------------
+enhanced_5172392        0.6322        no-key        no-key   Gemini fully
+enhanced_5199897        0.7050        no-key        no-key   Gemini fully
+enhanced_4706207        0.5058        no-key        no-key   Gemini fully
+enhanced_4658784        0.7148        no-key        no-key   Gemini fully
+enhanced_4524525        0.7218        no-key        no-key   Gemini fully
+enhanced_4575736        0.6184        no-key        no-key   Gemini fully
+enhanced_4978573        0.6282        no-key        no-key   Gemini fully
+enhanced_3636488        0.7006        no-key        no-key   Gemini fully
+enhanced_4938592        0.7346        no-key        no-key   Gemini fully
+enhanced_4355546        0.6378        no-key        no-key   Gemini fully
+enhanced_5376506        0.7140        no-key        no-key   Gemini fully
+enhanced_4633611        0.6826        no-key        no-key   Gemini fully
+enhanced_3196816        0.7050        no-key        no-key   Gemini fully
+enhanced_5228823        0.6350        no-key        no-key   Gemini fully
+enhanced_5222060        0.6936        no-key        no-key   Gemini fully
+enhanced_4595652        0.6208        no-key        no-key   Gemini fully
+enhanced_4519258        0.6692        no-key        no-key   Gemini fully
+enhanced_5131833        0.6606        no-key        no-key   Gemini fully
+enhanced_5075885        0.6470        no-key        no-key   Gemini fully
+enhanced_4844393        0.6786        no-key        no-key   Gemini fully
+enhanced_4368011        0.7514        no-key        no-key   Gemini fully
+enhanced_5128303        0.7268        no-key        no-key   Gemini fully
+enhanced_4966707        0.6250        no-key        no-key   Gemini fully
+enhanced_4622670        0.4888        no-key        no-key   Gemini fully
+enhanced_4625960        0.5988        no-key        no-key   Gemini fully
+enhanced_5284557        0.7536        no-key        no-key   Gemini fully
+enhanced_5089055        0.6206        no-key        no-key   Gemini fully
+enhanced_5377658        0.6632        no-key        no-key   Gemini fully
+enhanced_5370670        0.4638        no-key        no-key   Gemini fully
+enhanced_5202038        0.6956        no-key        no-key   Gemini fully
+enhanced_5161168        0.5932        no-key        no-key   Gemini fully
+enhanced_5471633        0.7460        no-key        no-key   Gemini fully
+enhanced_4213877        0.7516        no-key        no-key   Gemini fully
+enhanced_5097736        0.6592        no-key        no-key   Gemini fully
+enhanced_965068         0.7114        no-key        no-key   Gemini fully
+enhanced_965055         0.6748        no-key        no-key   Gemini fully
+enhanced_3932063        0.6988        no-key        no-key   Gemini fully
+enhanced_3157892        0.7106        no-key        no-key   Gemini fully
+enhanced_4499766        0.7148        no-key        no-key   Gemini fully
+enhanced_4905926        0.6570        no-key        no-key   Gemini fully
+enhanced_5552777        0.6398        no-key        no-key   Gemini fully
+enhanced_5034225        0.6910        no-key        no-key   Gemini fully
+enhanced_5013705_UaZ7HuO        0.5862        no-key        no-key   Gemini fully
+enhanced_5273773        0.6982        no-key        no-key   Gemini fully
+enhanced_5469628        0.4734        no-key        no-key   Gemini fully
+enhanced_4902455        0.6278        no-key        no-key   Gemini fully
+enhanced_4618196        0.7164        no-key        no-key   Gemini fully
+enhanced_4392960_8QhHUH1        0.5028        no-key        no-key   Gemini fully
+enhanced_4680100        0.6514        no-key        no-key   Gemini fully
+enhanced_4482592        0.6820        no-key        no-key   Gemini fully
+enhanced_4268932        0.6252        no-key        no-key   Gemini fully
+enhanced_5687435        0.7036        no-key        no-key   Gemini fully
+enhanced_4758157        0.7418        no-key        no-key   Gemini fully
+enhanced_4408241_TUy1XCy        0.6232        no-key        no-key   Gemini fully
+enhanced_4785521_ZhzozzH        0.6058        no-key        no-key   Gemini fully
+enhanced_4869238        0.6278        no-key        no-key   Gemini fully
+enhanced_2040697        0.7386        no-key        no-key   Gemini fully
+enhanced_4453012        0.6716        no-key        no-key   Gemini fully
+enhanced_5139896        0.6196        no-key        no-key   Gemini fully
+enhanced_4814197        0.7062        no-key        no-key   Gemini fully
+enhanced_5348540        0.5840        no-key        no-key   Gemini fully
+enhanced_5564694        0.6570        no-key        no-key   Gemini fully
+enhanced_5519571        0.4924        no-key        no-key   Gemini fully
+enhanced_5620140        0.6012        no-key        no-key   Gemini fully
+enhanced_4367883_CwCljmE        0.7022        no-key        no-key   Gemini fully
+enhanced_4689419        0.6622        no-key        no-key   Gemini fully
+enhanced_4818697        0.7156        no-key        no-key   Gemini fully
+enhanced_5373983        0.6082        no-key        no-key   Gemini fully
+enhanced_5300009        0.6926        no-key        no-key   Gemini fully
+enhanced_4211554        0.6740        no-key        no-key   Gemini fully
+enhanced_5128260        0.7462        no-key        no-key   Gemini fully
+enhanced_5603869        0.6606        no-key        no-key   Gemini fully
+enhanced_4257412        0.7066        no-key        no-key   Gemini fully
+enhanced_5423467        0.6570        no-key        no-key   Gemini fully
+enhanced_5401081        0.5984        no-key        no-key   Gemini fully
+enhanced_5568886        0.6272        no-key        no-key   Gemini fully
+enhanced_4678863_sSLArgS        0.7012        no-key        no-key   Gemini fully
+enhanced_5303517        0.7456        no-key        no-key   Gemini fully
+enhanced_2138766        0.6998        no-key        no-key   Gemini fully
+enhanced_5512912        0.5834        no-key        no-key   Gemini fully
+enhanced_4724330        0.6552        no-key        no-key   Gemini fully
+enhanced_5323044        0.7074        no-key        no-key   Gemini fully
+enhanced_5595890        0.7076        no-key        no-key   Gemini fully
+enhanced_345323         0.7450        no-key        no-key   Gemini fully
+enhanced_5185441        0.6220        no-key        no-key   Gemini fully
+enhanced_4487580        0.7706        no-key        no-key   Gemini fully
+enhanced_4433902        0.6468        no-key        no-key   Gemini fully
+enhanced_5371857        0.6612        no-key        no-key   Gemini fully
+enhanced_3702825        0.6492        no-key        no-key   Gemini fully
+enhanced_5479389        0.6170        no-key        no-key   Gemini fully
+enhanced_4834362        0.7218        no-key        no-key   Gemini fully
+enhanced_5472876        0.5300        no-key        no-key   Gemini fully
+enhanced_4706228        0.6518        no-key        no-key   Gemini fully
+enhanced_2374612        0.7412        no-key        no-key   Gemini fully
+enhanced_4919392        0.6236        no-key        no-key   Gemini fully
+enhanced_5342447        0.7154        no-key        no-key   Gemini fully
+enhanced_5118840        0.6178        no-key        no-key   Gemini fully
+enhanced_4491461        0.7688        no-key        no-key   Gemini fully
+enhanced_4475082        0.5904        no-key        no-key   Gemini fully
+enhanced_4694371        0.6318        no-key        no-key   Gemini fully
+enhanced_5138251        0.6382        no-key        no-key   Gemini fully
+enhanced_5138284        0.6174        no-key        no-key   Gemini fully
+enhanced_4428405        0.6008        no-key        no-key   Gemini fully
+enhanced_5247544        0.6420        no-key        no-key   Gemini fully
+enhanced_5130553        0.5978        no-key        no-key   Gemini fully
+enhanced_4435061        0.5392        no-key        no-key   Gemini fully
+enhanced_5639928        0.4740        no-key        no-key   Gemini fully
+enhanced_5613988        0.6638        no-key        no-key   Gemini fully
+enhanced_5417292        0.6662        no-key        no-key   Gemini fully
+enhanced_5543617        0.7090        no-key        no-key   Gemini fully
+enhanced_4635391        0.5992        no-key        no-key   Gemini fully
+enhanced_4382549        0.6468        no-key        no-key   Gemini fully
+enhanced_5440739        0.5002        no-key        no-key   Gemini fully
+enhanced_5185900        0.6764        no-key        no-key   Gemini fully
+enhanced_5324061        0.7332        no-key        no-key   Gemini fully
+enhanced_5125182        0.7298        no-key        no-key   Gemini fully
+enhanced_4967000        0.6276        no-key        no-key   Gemini fully
+enhanced_3691800        0.7148        no-key        no-key   Gemini fully
+enhanced_4286525        0.6022        no-key        no-key   Gemini fully
+enhanced_4346203        0.5982        no-key        no-key   Gemini fully
+enhanced_2865884        0.7268        no-key        no-key   Gemini fully
+enhanced_4369464        0.7014        no-key        no-key   Gemini fully
+enhanced_3525283        0.6964        no-key        no-key   Gemini fully
+enhanced_4537331        0.6516        no-key        no-key   Gemini fully
+enhanced_4747109        0.5296        no-key        no-key   Gemini fully
+enhanced_4469697        0.5444        no-key        no-key   Gemini fully
+enhanced_5283594        0.7138        no-key        no-key   Gemini fully
+enhanced_4293456        0.6264        no-key        no-key   Gemini fully
+enhanced_3198783        0.6504        no-key        no-key   Gemini fully
+enhanced_4912922        0.7238        no-key        no-key   Gemini fully
+enhanced_4792986_U9vL3RX        0.7058        no-key        no-key   Gemini fully
+enhanced_3885003        0.7014        no-key        no-key   Gemini fully
+enhanced_868587         0.7244        no-key        no-key   Gemini fully
+enhanced_3590493        0.6892        no-key        no-key   Gemini fully
+enhanced_5231016        0.6226        no-key        no-key   Gemini fully
+enhanced_5244350        0.6326        no-key        no-key   Gemini fully
+enhanced_5679760        0.7634        no-key        no-key   Gemini fully
+enhanced_3124708        0.6738        no-key        no-key   Gemini fully
+enhanced_5221132        0.7138        no-key        no-key   Gemini fully
+enhanced_4399455        0.6396        no-key        no-key   Gemini fully
+enhanced_3070742        0.6718        no-key        no-key   Gemini fully
+enhanced_5103463        0.6046        no-key        no-key   Gemini fully
+enhanced_5470148        0.6962        no-key        no-key   Gemini fully
+enhanced_4683654        0.6070        no-key        no-key   Gemini fully
+enhanced_5637952        0.7090        no-key        no-key   Gemini fully
+enhanced_5619505        0.6164        no-key        no-key   Gemini fully
+enhanced_1020072        0.3794        no-key        no-key   Gemini fully
+enhanced_4723039        0.6050        no-key        no-key   Gemini fully
+enhanced_5210075        0.7648        no-key        no-key   Gemini fully
+enhanced_3133673        0.6148        no-key        no-key   Gemini fully
+enhanced_4153949        0.6860        no-key        no-key   Gemini fully
+enhanced_5518556        0.6300        no-key        no-key   Gemini fully
+enhanced_3135926        0.6552        no-key        no-key   Gemini fully
+enhanced_5530430        0.6112        no-key        no-key   Gemini fully
+enhanced_1176982        0.6104        no-key        no-key   Gemini fully
+enhanced_2717163        0.6086        no-key        no-key   Gemini fully
+enhanced_4603000        0.7228        no-key        no-key   Gemini fully
+enhanced_5515068        0.6586        no-key        no-key   Gemini fully
+enhanced_4444230_wNrw5vK        0.7456        no-key        no-key   Gemini fully
+enhanced_4739780        0.6216        no-key        no-key   Gemini fully
+enhanced_4497520_tvMmBiw        0.6954        no-key        no-key   Gemini fully
+enhanced_4497512        0.6954        no-key        no-key   Gemini fully
+enhanced_4482747        0.6258        no-key        no-key   Gemini fully
+enhanced_3873588        0.6792        no-key        no-key   Gemini fully
+enhanced_5638127        0.7528        no-key        no-key   Gemini fully
+enhanced_4431240        0.7504        no-key        no-key   Gemini fully
+enhanced_5653007        0.6296        no-key        no-key   Gemini fully
+enhanced_1113320        0.7684        no-key        no-key   Gemini fully
+enhanced_3717255        0.7264        no-key        no-key   Gemini fully
+enhanced_4398424        0.7124        no-key        no-key   Gemini fully
+enhanced_3651437        0.7040        no-key        no-key   Gemini fully
+enhanced_4478088        0.5718        no-key        no-key   Gemini fully
+enhanced_5030408_m0CnTbl        0.6174        no-key        no-key   Gemini fully
+enhanced_5580249        0.7244        no-key        no-key   Gemini fully
+enhanced_4924124_mbAqjwM        0.6298        no-key        no-key   Gemini fully
+enhanced_4355587        0.6438        no-key        no-key   Gemini fully
+enhanced_5404148        0.7202        no-key        no-key   Gemini fully
+enhanced_4782774_7w4zVFk        no-key        no-key        no-key   -
+
+(no --truth given: 'best' = highest score, NOT necessarily best. Pass --truth labels.csv to rank engines against human judgement.)
+
+Summary sheet:  /Users/mohdshamshulqamar/Downloads/IMAGE_RATING_PROJECT/image_rating_system/output/comparison.csv
+Detailed sheet: /Users/mohdshamshulqamar/Downloads/IMAGE_RATING_PROJECT/image_rating_system/output/comparison_detailed.csv  (every parameter, reasoning, winner)
+END Mon Jun 29 12:27:46 IST 2026

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 760" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="gate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f5e9"/><stop offset="1" stop-color="#c8e6c9"/>
+    </linearGradient>
+    <linearGradient id="brain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3f2fd"/><stop offset="1" stop-color="#bbdefb"/>
+    </linearGradient>
+    <linearGradient id="blend" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3e0"/><stop offset="1" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#455a64"/>
+    </marker>
+    <filter id="sh" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1180" height="760" fill="#fafbfc"/>
+  <text x="40" y="46" font-size="26" font-weight="700" fill="#1a2530">Image Rating System v3 — "Gemini Brain + Open-Source Gate"</text>
+  <text x="40" y="74" font-size="15" fill="#5b6b7a">One defensible photo-quality score per profile → feed ranking. Grok removed; attractiveness reframed as neutral "photogenic" scoring.</text>
+
+  <!-- INPUT -->
+  <rect x="40" y="120" width="150" height="70" rx="10" fill="#fff" stroke="#90a4ae" filter="url(#sh)"/>
+  <text x="115" y="150" font-size="15" font-weight="700" text-anchor="middle" fill="#263238">Profile Image</text>
+  <text x="115" y="172" font-size="12" text-anchor="middle" fill="#607d8b">bytes / URL</text>
+  <line x1="190" y1="155" x2="232" y2="155" stroke="#455a64" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- STAGE 0 -->
+  <rect x="234" y="104" width="232" height="220" rx="12" fill="url(#gate)" stroke="#66bb6a" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="350" y="130" font-size="13" font-weight="700" text-anchor="middle" fill="#1b5e20">STAGE 0 · OPEN-SOURCE GATE</text>
+  <text x="350" y="149" font-size="11" text-anchor="middle" fill="#2e7d32">numpy / PIL · ~free · &lt;20ms</text>
+  <g font-size="12.5" fill="#1b5e20">
+    <text x="252" y="178">• Blur (Laplacian variance)</text>
+    <text x="252" y="202">• Exposure (too dark / blown)</text>
+    <text x="252" y="226">• Resolution &amp; aspect ratio</text>
+    <text x="252" y="250">• [plug] NSFW / face-count</text>
+  </g>
+  <rect x="252" y="266" width="196" height="44" rx="7" fill="#fff" stroke="#a5d6a7"/>
+  <text x="350" y="284" font-size="11" text-anchor="middle" fill="#c62828" font-weight="700">junk → PREFILTERED</text>
+  <text x="350" y="300" font-size="10.5" text-anchor="middle" fill="#555">rejected before any paid call</text>
+  <line x1="466" y1="200" x2="508" y2="200" stroke="#455a64" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- STAGE 1+2 -->
+  <rect x="510" y="104" width="300" height="220" rx="12" fill="url(#brain)" stroke="#42a5f5" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="660" y="130" font-size="13" font-weight="700" text-anchor="middle" fill="#0d47a1">STAGE 1+2 · GEMINI BRAIN</text>
+  <text x="660" y="149" font-size="11" text-anchor="middle" fill="#1565c0">one VLM · 2 parallel JSON calls · temp=0</text>
+
+  <rect x="528" y="162" width="124" height="142" rx="8" fill="#fff" stroke="#90caf9"/>
+  <text x="590" y="182" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0d47a1">Qualitative</text>
+  <g font-size="10" fill="#37474f">
+    <text x="540" y="202">Expression</text>
+    <text x="540" y="218">EyeContact</text>
+    <text x="540" y="234">Grooming</text>
+    <text x="540" y="250">Lighting · Attire</text>
+    <text x="540" y="266">Centering · Pose</text>
+    <text x="540" y="282">+ 7 safety flags</text>
+    <text x="540" y="298" fill="#1565c0">→ Q (wtd avg)</text>
+  </g>
+
+  <rect x="668" y="162" width="124" height="142" rx="8" fill="#fff" stroke="#90caf9"/>
+  <text x="730" y="182" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0d47a1">Aesthetic</text>
+  <g font-size="10" fill="#37474f">
+    <text x="680" y="202">"photogenic"</text>
+    <text x="680" y="218">(reframed —</text>
+    <text x="680" y="234">not "hotness")</text>
+    <text x="680" y="258">rates the PHOTO,</text>
+    <text x="680" y="274">not the person</text>
+    <text x="680" y="298" fill="#1565c0">→ A (0–1)</text>
+  </g>
+  <line x1="810" y1="214" x2="852" y2="214" stroke="#455a64" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- STAGE 3 -->
+  <rect x="854" y="104" width="286" height="220" rx="12" fill="url(#blend)" stroke="#ffa726" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="997" y="130" font-size="13" font-weight="700" text-anchor="middle" fill="#e65100">STAGE 3 · BLEND</text>
+  <text x="997" y="149" font-size="11" text-anchor="middle" fill="#ef6c00">versioned · configurable · no deploy</text>
+  <g font-size="12" fill="#bf360c">
+    <text x="872" y="178">1· Blocking flag → BLOCKED (0)</text>
+    <text x="872" y="202" font-weight="700">2· final = wₐ·A + w_q·Q</text>
+    <text x="888" y="220" font-size="11">♀ 0.80/0.20 · ♂ 0.50/0.50 (tunable)</text>
+    <text x="872" y="244">3· Soft penalty (ad/text)</text>
+    <text x="872" y="268">4· Percentile calibrate (cohort)</text>
+  </g>
+  <rect x="872" y="282" width="250" height="30" rx="7" fill="#fff" stroke="#ffcc80"/>
+  <text x="997" y="302" font-size="12" font-weight="700" text-anchor="middle" fill="#e65100">FINAL SCORE → feed ranking</text>
+
+  <!-- CROSS-CUTTING BAR -->
+  <rect x="40" y="372" width="1100" height="96" rx="12" fill="#eceff1" stroke="#b0bec5" filter="url(#sh)"/>
+  <text x="60" y="398" font-size="13" font-weight="700" fill="#37474f">CROSS-CUTTING GUARANTEES</text>
+  <g font-size="12" fill="#37474f">
+    <text x="60" y="426">Version fingerprint per record → drives re-scoring &amp; audit</text>
+    <text x="60" y="448">Hash + version cache → determinism &amp; zero duplicate cost</text>
+    <text x="640" y="426">Fallback = 0.25, retry-flagged — NOT 0.5</text>
+    <text x="640" y="448">Fairness tone-drift report · append-only audit log</text>
+  </g>
+
+  <!-- FIXES STRIP -->
+  <text x="40" y="512" font-size="15" font-weight="700" fill="#1a2530">10 PRD issues fixed</text>
+  <g font-size="11.5">
+    <rect x="40" y="524" width="265" height="30" rx="6" fill="#fde8e8" stroke="#ef9a9a"/>
+    <text x="52" y="543" fill="#b71c1c">✗ "Attractiveness" weight had no source</text>
+    <rect x="315" y="524" width="265" height="30" rx="6" fill="#e8f5e9" stroke="#a5d6a7"/>
+    <text x="327" y="543" fill="#1b5e20">✓ separate top-level aesthetic term</text>
+
+    <rect x="595" y="524" width="265" height="30" rx="6" fill="#fde8e8" stroke="#ef9a9a"/>
+    <text x="607" y="543" fill="#b71c1c">✗ ghost 3rd "Quant" engine</text>
+    <rect x="870" y="524" width="270" height="30" rx="6" fill="#e8f5e9" stroke="#a5d6a7"/>
+    <text x="882" y="543" fill="#1b5e20">✓ clean 2-call design</text>
+
+    <rect x="40" y="560" width="265" height="30" rx="6" fill="#fde8e8" stroke="#ef9a9a"/>
+    <text x="52" y="579" fill="#b71c1c">✗ fallback 0.5 out-ranks real photos</text>
+    <rect x="315" y="560" width="265" height="30" rx="6" fill="#e8f5e9" stroke="#a5d6a7"/>
+    <text x="327" y="579" fill="#1b5e20">✓ 0.25 + retry, never cached</text>
+
+    <rect x="595" y="560" width="265" height="30" rx="6" fill="#fde8e8" stroke="#ef9a9a"/>
+    <text x="607" y="579" fill="#b71c1c">✗ "hotness/sexual" on matrimony</text>
+    <rect x="870" y="560" width="270" height="30" rx="6" fill="#e8f5e9" stroke="#a5d6a7"/>
+    <text x="882" y="579" fill="#1b5e20">✓ neutral "photogenic" reframe</text>
+  </g>
+
+  <!-- MOAT -->
+  <rect x="40" y="612" width="1100" height="116" rx="12" fill="#f3e5f5" stroke="#ce93d8" filter="url(#sh)"/>
+  <text x="60" y="638" font-size="14" font-weight="700" fill="#4a148c">THE MOAT — phased path to "undefeatable"</text>
+  <g font-size="12.5" fill="#4a148c">
+    <text x="60" y="666"><tspan font-weight="700">Phase A (now):</tspan> Gemini brain + OSS gate, all bugs fixed → validate on Telugu ♀ with an A/B holdout on REAL metrics (connects/views).</text>
+    <text x="60" y="690"><tspan font-weight="700">Phase B (scale):</tspan> swap aesthetic call to an open VLM via Groq (same adapter) when backfill volume makes cost dominate.</text>
+    <text x="60" y="714"><tspan font-weight="700">Phase C (win):</tspan> fine-tune a small model on YOUR engagement signal — predict P(connect) from the photo. Objective, cheap, defensible, yours.</text>
+  </g>
+</svg>

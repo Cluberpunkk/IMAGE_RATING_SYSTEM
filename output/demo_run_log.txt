@@ -1,0 +1,33 @@
+
+=== Image Rating System v3 — demo (mode=simulation) ===
+
+Version fingerprint stamped on every record:
+  {"pipeline_version": "pipeline-1.0.0", "model_version": "sim-v1", "prompt_version": "prompt-08a88a265a", "weight_version": "v3.0-2026-06"}
+
+Per-image results:
+  img_clean      SCORED      final=0.7499 aes=0.7722 qual=0.6606  28.2ms
+  img_deeptone   SCORED      final=0.7712 aes=0.7825 qual=0.7263  27.4ms
+  img_blurry     PREFILTERED final=0.0    aes=0.0    qual=0.0     19.5ms  <- prefilter_reject: too_blurry (lapvar=0.4)
+  img_dark       PREFILTERED final=0.0    aes=0.0    qual=0.0     18.8ms  <- prefilter_reject: too_dark (luma=19)
+  img_tiny       PREFILTERED final=0.0    aes=0.0    qual=0.0      2.2ms  <- prefilter_reject: too_small (0.04MP)
+  img_male       SCORED      final=0.6788 aes=0.5874 qual=0.7703  27.7ms
+
+Cache / idempotency check (re-running identical bytes):
+  img_dupe -> final=0.7499  cache_entries 6->6 (no new paid call; identical bytes served from cache)
+
+Cohort percentile calibration (raw -> calibrated feed weight):
+  img_clean      raw=0.7499  -> calibrated=0.5
+  img_deeptone   raw=0.7712  -> calibrated=1.0
+  img_male       raw=0.6788  -> calibrated=0.0
+
+Fairness segment report (mean final score by tone segment):
+  {"tone_light": 0.7144, "tone_deep": 0.7712}
+  (light vs deep tone should be CLOSE; a large gap = investigate.)
+
+Full structured output written to: /home/claude/image_rating_system/output/demo_results.json
+Audit trail (append-only):           /home/claude/image_rating_system/output/audit_log.jsonl
+Score cache:                          /home/claude/image_rating_system/output/score_cache.json
+
+Summary:
+  {"SCORED": 3, "PREFILTERED": 3}
+

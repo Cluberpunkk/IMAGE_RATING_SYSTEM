@@ -1,0 +1,7 @@
+START
+n=30
+APPROVED avg: Gemini-v2=0.621  Grok=0.630  grok higher
+REJECTED avg: Gemini-v2=0.648  Grok=0.633  (lower=better)
+SEPARATION:   Gemini-v2=-0.026  Grok=-0.003
+AUC:          Gemini-v2=0.422  Grok=0.453
+END

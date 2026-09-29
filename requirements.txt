@@ -1,0 +1,20 @@
+# Core (required for both simulation and gemini modes)
+numpy>=1.26
+Pillow>=10.0
+PyYAML>=6.0
+
+# Production VLM path only (`--mode gemini`)
+google-genai>=0.3.0
+
+# Open-source VLM fallback (Qwen2.5-VL via any OpenAI-compatible endpoint:
+# OpenRouter / Groq / Together / vLLM / HF router). Enable via fallback.vlm.
+openai>=1.30
+
+# Reading a PRIVATE Google Sheet by tab name via the Sheets API + service account
+# (`run.py fetch --service-account`). Not needed for the link-share / CSV paths.
+gspread>=6.0
+
+# Optional: open-source deep detectors for the Stage-0 gate (see README)
+#   transformers>=4.40        # CLIP-based NSFW classifier
+#   onnxruntime>=1.17         # fast face detection (RetinaFace/SCRFD)
+#   mediapipe>=0.10           # alternative face / landmark detection

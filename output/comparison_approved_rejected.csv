@@ -1,0 +1,31 @@
+Image,Gemini fully,Gemini + Grok,Gemini + OpenSource,Truth,Best engine,Status/Reason
+enhanced_195139,0.743,0.791,,1.0,Gemini + Grok,SCORED
+enhanced_6209,0.6438,0.7638,,1.0,Gemini + Grok,SCORED
+enhanced_22223,0.5364,0.6884,,1.0,Gemini + Grok,SCORED
+enhanced_34921,0.1602,0.3362,,1.0,Gemini + Grok,SCORED
+enhanced_56376,0.464,0.512,,1.0,Gemini + Grok,SCORED
+enhanced_57120,0.422,0.39,,1.0,Gemini fully,SCORED
+enhanced_63079,0.384,0.384,,1.0,Gemini fully,SCORED
+enhanced_112157,0.645,0.813,,1.0,Gemini + Grok,SCORED
+enhanced_71372,0.491,0.643,,1.0,Gemini + Grok,SCORED
+enhanced_82428,0.3804,0.5644,,1.0,Gemini + Grok,SCORED
+enhanced_84385,0.661,0.709,,1.0,Gemini + Grok,SCORED
+enhanced_75481,0.5132,0.7132,,1.0,Gemini + Grok,SCORED
+enhanced_158653,0.6336,0.6256,,1.0,Gemini fully,SCORED
+enhanced_139469,0.7258,0.7178,,1.0,Gemini fully,SCORED
+enhanced_140029,0.6728,0.8008,,1.0,Gemini + Grok,SCORED
+enhanced_3502017,0.4932,0.6692,,0.0,Gemini + Grok,SCORED
+enhanced_144414,0.8322,0.8242,,0.0,Gemini fully,SCORED
+enhanced_201035,0.7482,0.8122,,0.0,Gemini + Grok,SCORED
+enhanced_3481168,0.6068,0.7908,,0.0,Gemini + Grok,SCORED
+enhanced_93263,0.2,0.256,,0.0,Gemini + Grok,SCORED
+enhanced_94645,0.4656,0.5056,,0.0,Gemini + Grok,SCORED
+enhanced_95503,0.2356,0.3316,,0.0,Gemini + Grok,SCORED
+enhanced_3481853,0.5834,0.7274,,0.0,Gemini + Grok,SCORED
+enhanced_98419,0.7488,0.8048,,0.0,Gemini + Grok,SCORED
+enhanced_99904,0.7542,0.8262,,0.0,Gemini + Grok,SCORED
+enhanced_99438,0.5222,0.5542,,0.0,Gemini + Grok,SCORED
+enhanced_179003,0.2652,0.3052,,0.0,Gemini + Grok,SCORED
+enhanced_188554,0.7002,0.7882,,0.0,Gemini + Grok,SCORED
+enhanced_185154,0.5182,0.5102,,0.0,Gemini fully,SCORED
+enhanced_185498,0.6112,0.7952,,0.0,Gemini + Grok,SCORED
